@@ -1,0 +1,185 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:paddingTop="40dp"
+    android:layout_height="match_parent"
+    android:background="#121212">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:paddingTop="15dp"
+        android:layout_height="wrap_content">
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:paddingTop="10dp"
+    android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/greeting"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="22sp"
+            android:paddingStart="22dp"
+            android:textColor="@color/white"
+            android:fontFamily="@font/circularbold"
+            android:text="Good evening" />
+
+        <LinearLayout
+            android:id="@+id/imageViewsLayout"
+            android:layout_width="150dp"
+            android:layout_alignParentEnd="true"
+            android:paddingEnd="10dp"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+
+            <ImageView
+                android:id="@+id/notifications"
+                android:layout_width="wrap_content"
+                android:layout_height="25dp"
+                android:layout_weight="1"
+                android:layout_gravity="center"
+                android:src="@drawable/notif_icn"/>
+
+            <ImageView
+                android:id="@+id/history"
+                android:layout_width="wrap_content"
+                android:layout_height="36dp"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:src="@drawable/history_icn"/>
+
+            <ImageView
+                android:id="@+id/setting"
+                android:layout_width="wrap_content"
+                android:layout_height="25dp"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:src="@drawable/setting_icn"/>
+
+        </LinearLayout>
+</RelativeLayout>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rcy_playlists"
+            android:paddingStart="6dp"
+            android:paddingEnd="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:paddingTop="15dp"
+            />
+
+        <TextView
+            android:id="@+id/artists"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Top Artists"
+            android:visibility="invisible"
+            android:paddingTop="25dp"
+            android:textColor="@color/white"
+            android:paddingStart="22sp"
+            android:textSize="22sp"
+            android:fontFamily="@font/circularbold"/>
+
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rcy_albums"
+            android:layout_width="match_parent"
+            android:paddingStart="7dp"
+            android:paddingEnd="5dp"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:paddingTop="10dp"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Hits of 2024"
+            android:id="@+id/hits"
+            android:paddingTop="25dp"
+            android:visibility="invisible"
+            android:textColor="@color/white"
+            android:paddingStart="22sp"
+            android:textSize="22sp"
+            android:fontFamily="@font/circularbold"/>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/hits24"
+            android:paddingStart="7dp"
+            android:paddingEnd="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:paddingTop="10dp" />
+
+        <TextView
+            android:id="@+id/mashup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="20's Mashups"
+            android:visibility="invisible"
+            android:paddingTop="25dp"
+            android:textColor="@color/white"
+            android:paddingStart="22sp"
+            android:textSize="22sp"
+            android:fontFamily="@font/circularbold"/>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/mashups20"
+            android:paddingStart="7dp"
+            android:paddingEnd="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:paddingTop="10dp" />
+
+
+        <TextView
+            android:id="@+id/hh"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Indian Hiphop"
+            android:paddingTop="25dp"
+            android:textColor="@color/white"
+            android:visibility="invisible"
+            android:paddingStart="22sp"
+            android:textSize="22sp"
+            android:fontFamily="@font/circularbold"/>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/hiphop"
+            android:paddingStart="7dp"
+            android:paddingEnd="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:paddingTop="10dp" />
+
+        <TextView
+            android:id="@+id/rcy"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Recommended for You"
+            android:paddingTop="25dp"
+            android:visibility="invisible"
+            android:textColor="@color/white"
+            android:paddingStart="22sp"
+            android:textSize="22sp"
+            android:fontFamily="@font/circularbold"/>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rfy"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingStart="7dp"
+            android:paddingEnd="5dp"
+            android:orientation="horizontal"
+            android:paddingTop="10dp"
+            android:paddingBottom="55dp"
+            />
+    </LinearLayout>
+</ScrollView>

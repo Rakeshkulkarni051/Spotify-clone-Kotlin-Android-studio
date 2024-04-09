@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="35dp"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:orientation="vertical"
+           android:paddingBottom="48dp"
+           android:layout_height="wrap_content">
+
+           <ImageView
+               android:id="@+id/back_btn"
+               android:layout_width="40dp"
+               android:layout_height="40dp"
+               android:src="@drawable/back_arrow"
+               android:paddingStart="10dp"
+               />
+
+    <ImageView
+        android:id="@+id/album_cover"
+        android:layout_width="220dp"
+        android:layout_height="220dp"
+        android:layout_gravity="center"
+        android:scaleType="centerCrop"/>
+
+    <TextView
+        android:id="@+id/album_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:fontFamily="@font/circularmedium"
+        android:textColor="@color/white"
+        android:layout_marginTop="16dp"
+       android:paddingStart="16dp"/>
+
+
+           <LinearLayout
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:paddingStart="16dp"
+               android:paddingTop="7dp"
+               android:orientation="horizontal">
+
+
+               <ImageView
+                   android:id="@+id/like_icon"
+                   android:layout_width="30dp"
+                   android:layout_height="35dp"
+                   android:layout_gravity="center"
+                   android:src="@drawable/like_icon"/>
+
+               <ImageView
+                   android:id="@+id/download"
+                   android:layout_width="45dp"
+                   android:layout_height="40dp"
+                   android:layout_gravity="center"
+                   android:paddingStart="7dp"
+                   android:src="@drawable/download_icon"/>
+
+               <ImageView
+                   android:id="@+id/dots"
+                   android:layout_width="35dp"
+                   android:layout_height="35dp"
+                   android:paddingStart="7dp"
+                   android:layout_gravity="center"
+                   android:src="@drawable/dots"
+                  />
+
+               <ImageView
+                   android:layout_width="0dp"
+                   android:layout_weight="10"
+                   android:layout_height="35dp"/>
+
+               <ImageView
+                   android:id="@+id/shuffle"
+                   android:layout_width="50dp"
+                   android:layout_height="50dp"
+                   android:layout_gravity="center"
+                   android:src="@drawable/shuffle_icon"/>
+
+               <ImageView
+                   android:id="@+id/play"
+                   android:layout_width="80dp"
+                   android:layout_height="70dp"
+                   android:layout_marginStart="-15dp"
+                   android:layout_gravity="center"
+                   android:src="@drawable/green_play"/>
+
+           </LinearLayout>
+
+           <androidx.recyclerview.widget.RecyclerView
+               android:id="@+id/track_recycler_view"
+               android:layout_width="match_parent"
+               android:nestedScrollingEnabled="false"
+               android:layout_height="wrap_content"
+               android:padding="8dp"/>
+
+       </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>
