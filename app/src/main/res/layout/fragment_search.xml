@@ -21,6 +21,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <SearchView
+        android:id="@+id/Search_box"
         android:layout_width="match_parent"
         android:layout_height="72dp"
         android:layout_marginTop="84dp"
