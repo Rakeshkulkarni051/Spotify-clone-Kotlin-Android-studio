@@ -53,7 +53,7 @@ This structure keeps the codebase modular, testable, and easy to extend.
 
 1. Clone the repository
 ```bash
-   git clone https://github.com/<your-username>/Soundify.git
+   git clone https://github.com/Rakeshkulkarni051/Spotify-clone-Kotlin-Android-studio.git
 ```
 2. Open the project in Android Studio
 3. Add your Spotify API credentials in the `local.properties` or a config file:
